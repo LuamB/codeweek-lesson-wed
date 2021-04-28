@@ -167,6 +167,8 @@ ion-icon {
 
 .button-wrapper {
     margin-left: auto;
+    display: flex;
+    margin-right: 3em;
 }
 .spoty-btn {
     text-transform: uppercase;
