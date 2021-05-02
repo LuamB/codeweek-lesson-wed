@@ -14,58 +14,143 @@
         <img src="assets/spotify-logo.png">
         <ul>
             <li tabindex="1">
-                <ion-icon name="home"></ion-icon>Home
+                <ion-icon name="home-outline"></ion-icon><span>Home</span>
             </li>
             <li tabindex="1">
-                <ion-icon name="search"></ion-icon>Search
+                <ion-icon name="search-outline"></ion-icon><span>Search</span>
             </li>
             <li tabindex="1">
-                <ion-icon name="grid"></ion-icon>Library
+                <ion-icon name="grid-outline"></ion-icon><span>Library</span>
             </li>
         </ul>
     </div>
-
-    <div id="right">
+    <div id="main">
         <div id="navbar">
-            <ion-icon name="chevron-back-outline"></ion-icon>
-            <ion-icon name="chevron-forward-outline"></ion-icon>
+            <div class="arrows">
+                <ion-icon name="chevron-back-sharp"></ion-icon>
+                <ion-icon name="chevron-forward-sharp"></ion-icon>
+            </div>
             <div id="search-wrapper">
                 <ion-icon name="search-outline"></ion-icon>
-                <input type="search">
+                <input id="search" type="search" placeholder="Search..." autocomplete="off">
+                <ion-icon onclick="this.parentNode.querySelector('input').value=''" class="cancel-icon"
+                    name="close-outline">
+                </ion-icon>
+            </div>
+            <div class="sign-in-wrapper">
+                <button class="spoty-btn sign-up-btn">Sign up</button>
+                <button class="spoty-btn login-btn">Login</button>
             </div>
         </div>
+        <div id="content">
 
-        <div id="main">
+            <h2>Songs.</h2>
 
-            <div class="card">
-                <div class="media">
-                    <img src="assets/album-cover.jpeg">
-                    <ion-icon name="play-sharp"></ion-icon>
+            <div class="content-row">
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>Song title</p>
-                    <span>Artist Name</span>
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/album-cover.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Song Title</h4>
+                        <span>Artist name</span>
+                    </div>
                 </div>
             </div>
 
+            <h2>Artists.</h2>
+
+            <div class="content-row">
+                <div class="card">
+                    <div class="card-media">
+                        <img src="assets/queen.jpeg">
+                        <div class="play-btn">
+                            <ion-icon name="play-sharp"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>Artist Name</h4>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
     </div>
 
     <div id="footer">
-        <div style="flex-direction: column;">
-            <p>Preview of Spotify</p>
+        <div>
+            <p class="preview-title">Preview of Spotify</p>
             <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
         </div>
-
-        <div class="button-wrapper">
-            <button class="spoty-btn">
-                Sign up free
-            </button>
+        <div>
+            <button class="spoty-btn">Sign up free</button>
         </div>
-
     </div>
+
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>
